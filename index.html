@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Roomify</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+<body>
+
+    <header>
+
+        <div class="logo-brand">
+            <img src="img/favicon.png" alt="">
+
+            <p>Roomify</p>
+        </div>
+
+        <nav class="navigator">
+
+            <ul class="header-list">
+
+                <li> <a href="index.html">Home</a> </li>
+                <li> <a href="#two">Festival</a> </li>
+                <li> <a href="donwload.html">Download</a> </li>
+                <li> <a href="#six">Plus & Pridge</a> </li>
+            </ul>
+
+            <div class="user-buttons">
+                <button id="sing"> Sing in</button>
+                <button id="login"> Login</button>
+            </div>
+        </nav>
+
+        <div class="responsivy">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="sec-scroll first-section show-scroll" id="one">
+
+            <div class="left-area">
+    
+                <h1>Supercharge your meetings and made it effective</h1>
+    
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt consectetur ea nisi</p>
+    
+                <button onclick="gotoDonw()">Start meeting now</button>
+            </div>
+    
+            <div class="right-area">
+               <div class="back-part">
+    
+                    <div class="back-bools">
+                        <span> <i class="bi bi-stopwatch"></i> </span>
+                        <span> <i class="bi bi-arrow-up-right-circle"></i> </span>
+                        <span> <i class="bi bi-camera-reels"></i> </span>
+                        <span> <i class="bi bi-calendar-date"></i> </span>
+                        <span> <i class="bi bi-arrows-fullscreen"></i></span>
+                        <span> <i class="bi bi-shuffle"></i></span>
+                        <span> <i class="bi bi-box-arrow-in-right"></i> </span>
+                    </div>
+    
+                    <div class="back-top">
+    
+                        <div class="top-more">
+                            <div class="top-options">
+                                <p> <span>%</span> Lorem ipsum</p>
+                                <span> <i class="bi bi-caret-right-fill"></i> </span>
+                                <p> <span>%</span> Handern 1</p>
+                            </div>
+    
+                            <p>Call me booking soon</p>
+                        </div>
+    
+                        <div class="calls">
+                            <img src="img/call-me.jpg" alt="">
+    
+                            <div class="phone-number">
+                                +35 56 22 01
+                            </div>
+    
+                            <div class="image">
+                                <img src="img/cara4.jfif" alt="">
+                            </div>
+    
+                            <div class="call-buttons">
+                                <span> <i class="bi bi-mic-mute"></i> </span>
+                                <span> <i class="bi bi-camera-video"></i> </span>
+                                <span> <i class="bi bi-camera-video-off"></i> </span>
+                                <span> <i class="bi bi-record2"></i> </span>
+                            </div>
+    
+                            <div class="participants">
+                                 <img src="img/cara2.jfif" alt="">
+                                 <img src="img/cara3.jfif" alt="">
+                                 <img src="img/cara5.jfif" alt="">
+                                 <span>3+</span>
+                            </div>
+                        </div>
+                    </div>
+    
+               </div>
+            </div>
+        </section>
+    
+        <section class="sec-scroll second-section" id="two">
+    
+            <div class="used">
+    
+                <h1>Used by professionals on</h1>
+    
+                <div class="logs">
+    
+                    <div>
+                        <img src="img/logo1.png" alt="">
+    
+                        <img src="img/logo2.png" alt="" id="special">
+                    </div>
+    
+                    <div>
+                        <img src="img/logo3.png" alt="">
+    
+                        <img src="img/logo4.png" alt="">
+                    </div>
+    
+                    <div>
+                        <img src="img/logo5.png" alt="">
+    
+                        <img src="img/logo6.png" alt="">
+                    </div>
+                </div>
+            </div>
+    
+            <div class="stastics" id="statsSection">
+
+                <div>
+
+                    <div class="stat">
+                        <h1 data-target="200">0<span>k+</span></h1>
+                        <p>Users happiness by more</p>
+                    </div>
+
+                    <div class="stat">
+                        <h1 data-target="98">0<span>%</span></h1>
+                        <p>Payments preview</p>
+                    </div>
+
+                </div>
+
+                <div>
+
+                    <div class="stat">
+                        <h1 data-target="150">0<span>+</span></h1>
+                        <p>Capital required</p>
+                    </div>
+
+                    <div class="stat">
+                        <h1 data-target="10">0<span>pb</span></h1>
+                        <p id="align">Data pixels</p>
+                    </div>
+
+                </div>
+
+            </div>
+    
+        </section>
+
+        <section class="sec-scroll third-section" id="third">
+
+            <div class="container">
+                <div class="links">
+
+                    <h1>Flexible solutions  <br> for all your needs </h1>
+
+                    <div class="link active" onclick="showContent('content1')">&nbsp;&nbsp;&nbsp;AI Companion</div>
+                    <div class="link" onclick="showContent('content2')">&nbsp;&nbsp;&nbsp;Live Chat</div>
+                    <div class="link" onclick="showContent('content3')">&nbsp;&nbsp;&nbsp;Virtual Meetings</div>
+                    <div class="link" onclick="showContent('content4')">&nbsp;&nbsp;&nbsp;AI Summarize</div>
+                    <div class="link" onclick="showContent('content5')">&nbsp;&nbsp;&nbsp;Meetinh Clip</div>
+                </div>
+
+               <div class="show-links">
+
+                    <div class="content active" id="content1">
+
+                        <div class="back-content">
+                            
+                            <div class="top">
+                                <p>Jay Chan </p>
+                                <img src="img/icone.ico" alt="">
+                            </div>
+
+                        </div>
+
+                        <img src="img/cara4.jfif" class="img1" alt="">
+                        <img src="img/call.jpg" class="img2" alt="">
+                        <img src="img/call-center.jpg" class="img3" alt="">
+
+                        <div class="sms_one">
+
+                            <div class="user">
+                                <img src="img/cara2.jfif" alt="">
+                                <p>Harry * <span>12:23 PM</span></p>
+                            </div>
+
+                            <div class="text-sms">
+                                Estou surpreso com a encomenda<br> Enfim foi boa!
+                            </div>
+
+                            <div class="emoji"> <img src="img/emoji.png" alt=""> </div>
+                        </div>
+
+                        <div class="sms_two">
+
+                            <div class="user">
+                                <img src="img/cara7.jfif" alt="">
+                                <p class="name">HarryKane</p>
+
+                                <span class="smile">Smile</span>
+                                <span class="ago">hours ago</span>
+                            </div>
+
+                            <div class="text-sms">
+                                Amanhã as 12 no BFA <br> conto com vc.
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="content" id="content2">
+                        <h2>Em construção</h2>
+                    </div>
+
+                    <div class="content" id="content3">
+                        <h2>Em construção</h2>
+                    </div>
+
+                    <div class="content" id="content4">
+                        <h2>Em construção</h2>
+                    </div>
+
+                    <div class="content" id="content5">
+                        <h2>Em construção</h2>
+                    </div>
+
+               </div>
+
+            </div>
+
+        </section>
+
+        <section class="sec-scroll fourth-section" id="fourth">
+            <h1>Now you can have conversation <br>without missing anything</h1>
+
+            <div class="photos">
+
+                <div>
+                    <img src="img/cara2.jfif" alt="">
+                    <img src="img/cara3.jfif" alt="">
+                </div>
+                <div>
+                    <img src="img/cara7.jfif" alt="">
+                    <img src="img/cara5.jfif" alt="">
+                    <img src="img/cara6.jfif" alt="">
+                    <img src="img/cara7.jfif" alt="">
+                    <img src="img/cara3.jfif" alt="">
+                </div>
+                <div>
+                    <img src="img/cara5.jfif" alt="">
+                    <img src="img/cara2.jfif" alt="">
+                </div>
+
+            </div>
+
+            <div class="most">
+                <div></div>
+                <div></div>
+                <div></div>
+
+                <div>
+
+                    <div class="cabec">
+                        <p>Recharges <span> &nbsp;&nbsp;<i class="bi bi-reception-4"></i></span>
+                        </p>
+
+                        <span><i class="bi bi-three-dots"></i></span>
+                    </div>
+
+                    <div class="speak">
+
+                        <div class="op">
+                            <img src="img/cara2.jfif" alt="">
+
+                            <div class="sec">
+                                <p>Ster00</p>
+
+                                <span>Good</span>
+                            </div>
+
+                        </div>
+
+                        <div class="op">
+                            <img src="img/cara3.jfif" alt="">
+
+                            <div class="sec">
+                                <p>User34</p>
+
+                                <span>I´m fine</span>
+                            </div>
+                            
+                        </div>
+
+                        <div class="op">
+                            <img src="img/cara7.jfif" alt="">
+
+                            <div class="sec">
+                                <p>Brother</p>
+
+                                <span>The money?</span>
+                            </div>
+                            
+                        </div>
+
+                        <div class="op">
+                            <img src="img/cara5.jfif" alt="">
+
+                            <div class="sec">
+                                <p>Queen</p>
+
+                                <span>I love you</span>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="sec-scroll fifth-section" id="fifth">
+
+            <div class="horizontal-container">
+                <div class="nav-links">
+                    <div class="nav-link active" onclick="showNavContent('nav-content1')">People Pricing</div>
+                    <div class="nav-link" onclick="showNavContent('nav-content2')">Meeting Chat</div>
+                    <div class="nav-link" onclick="showNavContent('nav-content3')">Model</div>
+                    <div class="nav-link" onclick="showNavContent('nav-content4')">Share Meeting</div>
+                    <div class="nav-link" onclick="showNavContent('nav-content5')">Meeting certifire</div>
+                    <div class="nav-link" onclick="showNavContent('nav-content6')">Chat Browser</div>
+                </div>
+
+                <div class="content-wrapper">
+
+                    <div class="nav-content active" id="nav-content1">
+
+                        <div class="geral-pricing">
+                            <div class="pricing">
+                                <i class="bi bi-lightbulb-fill"></i>
+                                <p> <span>Precificação para Pessoas</span>: Nosso produto foi desenvolvido com você em mente! Com uma estratégia de preços justa e acessível, garantimos que todos possam usufruir dos benefícios que ele oferece. Afinal, sua satisfação é nossa prioridade.</p>
+                            </div>
+                            <div class="pricing">
+                                <i class="bi bi-crosshair"></i>
+                                <p> <span>Focado no Valor Humano</span>: Entendemos que cada cliente é único, por isso adaptamos nossos preços para atender às suas necessidades. Queremos que você tenha a melhor experiência, com o máximo de valor pelo seu investimento.</p>
+                            </div>
+                            <div class="pricing">
+                                <i class="bi bi-fire"></i>
+                                <p> <span>Aproveite Agora</span>: Não perca a oportunidade de adquirir um produto que combina qualidade e preço acessível. Com nossa "Precificação para Pessoas", você terá exatamente o que precisa, sem pesar no bolso.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="nav-content" id="nav-content2">
+                        <div class="geral-pricing">
+                            <div class="pricing">
+                                <i class="bi bi-people-fill"></i>
+                                <p> <span>Chat para Reuniões</span>: Simplifique sua comunicação! Com o Meeting Chat, você pode colaborar em tempo real com sua equipe, garantindo que todos estejam na mesma página, independentemente de onde estejam.</p>
+                            </div>
+                            <div class="pricing">
+                                <i class="bi bi-graph-up-arrow"></i>
+                                <p> <span>Foco na Produtividade</span>: O Meeting Chat foi criado para tornar suas reuniões mais eficientes. Esqueça as longas trocas de e-mails! Aqui, todas as informações estão organizadas e acessíveis para uma tomada de decisão rápida e eficaz.</p>
+                            </div>
+                            <div class="pricing">
+                                <i class="bi bi-wifi"></i>
+                                <p> <span> Conecte-se Agora</span>: Aumente a produtividade das suas reuniões com o Meeting Chat. Fácil de usar, intuitivo e feito para transformar a forma como sua equipe trabalha!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="nav-content" id="nav-content3">
+                       <div class="geral-pricing">
+                        <!-- Seção Model -->
+                            <div class="pricing">
+                                <i class="bi bi-cpu-fill"></i>
+                                <p> <span>Model</span>: Utilize o poder do processamento inteligente com o Model. Ele otimiza processos complexos, garantindo decisões rápidas e precisas em suas operações.</p>
+                            </div>
+                            <div class="pricing">
+                                <i class="bi bi-speedometer2"></i>
+                                <p> <span>Alta Performance</span>: O Model entrega resultados com alta velocidade e precisão, tornando-o uma solução ideal para empresas que precisam de análises e decisões em tempo real.</p>
+                            </div>
+                            <div class="pricing">
+                                <i class="bi bi-gear-fill"></i>
+                                <p> <span>Automatização Inteligente</span>: Com o Model, suas operações se tornam mais eficientes por meio de automação avançada e algoritmos que aprendem e se adaptam às suas necessidades.</p>
+                            </div>
+
+                       </div>
+                    </div>
+
+                    <div class="nav-content" id="nav-content4">
+
+                        <div class="cent">
+
+                            <div>
+
+                                <div class="chats">
+                                    <h3>Swicth your meeting</h3>
+
+                                    <div class="search">
+                                        <input type="search" placeholder="Digit a number">
+
+                                        <button>Search</button>
+                                    </div>
+
+                                    <p class="you">Your recent calls today</p>
+
+                                    <div class="contacts">
+                                        
+                                        <div>
+                                            <p>+</p>
+
+                                            <span>Add</span>
+                                        </div>
+
+                                        <div>
+                                            <img src="img/cara2.jfif" alt="">
+
+                                            <strong>Kiossa</strong>
+                                        </div>
+
+                                        <div>
+                                            <img src="img/cara3.jfif" alt="">
+
+                                            <strong>Kenny</strong>
+                                        </div>
+
+                                        <div>
+                                            <img src="img/cara7.jfif" alt="">
+
+                                            <strong>Leilo</strong>
+                                        </div>
+
+                                        <div>
+                                            <img src="img/cara5.jfif" alt="">
+
+                                            <strong>Mirian</strong>
+                                        </div>
+
+                                        <div>
+                                            <img src="img/cara6.jfif" alt="">
+
+                                            <strong>Ariel</strong>
+                                        </div>
+
+                                        <div>
+                                            <img src="img/cara7.jfif" alt="">
+
+                                            <strong>Jorge</strong>
+                                        </div>
+                                    </div>
+
+                                    <div class="last">
+                                        <p>meeting number?</p>
+
+                                        <span><i class="bi bi-link-45deg"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <h1>Make your team <br> collaboration easy</h1>
+
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid distinctio ipsum aspernatur, non omnis saepe velit asperiores facilis aperiam quis?</p>
+
+                                <div class="baixo">
+
+                                    <div>
+                                        <span><i class="bi bi-person-add"></i></span>
+
+                                        <h3>Invite your Team</h3>
+
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo ratione velit suscipit totam incidunt.</p>
+                                    </div>
+
+                                    <div>
+                                        <span><i class="bi bi-share"></i></span>
+
+                                        <h3>Invite your Team</h3>
+
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo ratione velit suscipit totam incidunt.</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="nav-content" id="nav-content5">
+                        <div class="geral-pricing">
+                            <div class="pricing">
+                                <i class="bi bi-award-fill"></i>
+                                <p> <span>Certificação de Reuniões</span>: Garanta que suas reuniões sejam eficientes e produtivas com o Meeting Certifire. Nossa solução ajuda a avaliar e melhorar a qualidade de suas reuniões, proporcionando um ambiente colaborativo de alto desempenho.</p>
+                            </div>
+                            <div class="pricing">
+                                <i class="bi bi-bar-chart-fill"></i>
+                                <p> <span>Avaliação e Melhoria Contínua</span>: O Meeting Certifire analisa a eficácia das reuniões, oferecendo feedback e sugestões para otimização. Dessa forma, você pode garantir que cada encontro seja focado, com resultados claros e alinhados aos objetivos da equipe.</p>
+                            </div>
+                            <div class="pricing">
+                                <i class="bi bi-check-circle-fill"></i>
+                                <p> <span>Certifique-se do Sucesso</span>: Com o Meeting Certifire, suas reuniões estarão sempre no caminho certo para alcançar resultados. Aplique uma abordagem estruturada e comece a transformar suas reuniões em verdadeiras ferramentas de sucesso!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="nav-content" id="nav-content6">
+                        <div class="geral-pricing">
+                            <div class="pricing">
+                                <i class="bi bi-browser-chrome"></i>
+                                <p> <span>Chat Browser</span>: Com o Chat Browser, você pode integrar seu navegador diretamente às suas conversas. Pesquise, compartilhe e discuta links sem sair do chat, tornando a navegação em equipe muito mais ágil e colaborativa.</p>
+                            </div>
+                            <div class="pricing">
+                                <i class="bi bi-collection"></i>
+                                <p> <span>Fácil Integração</span>: O Chat Browser permite que você navegue na web sem sair da plataforma de chat. É a solução perfeita para otimizar reuniões e garantir que todos os recursos necessários estejam a um clique de distância.</p>
+                            </div>
+                            <div class="pricing">
+                                <i class="bi bi-lightning-fill"></i>
+                                <p> <span>Rapidez e Eficiência</span>: Aumente a eficiência nas suas reuniões e colaborações, pesquisando e compartilhando conteúdos em tempo real com o Chat Browser. Uma ferramenta poderosa para equipes que precisam de agilidade.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+    
+        <section class="sec-scroll six-section" id="six">
+    
+            <h1>Simple pricing <br> and clear value</h1>
+    
+            <div class="geral-packge">
+
+                <div class="resp-aling">
+
+                    <section>
+                        <div class="gira">
+                            
+                            <div class="basic-pro">
+                                <div class="desc">
+                                    <h3>Basic Pro</h3>
+                                    <p> Only <span> $100 </span> permanent</p>
+                                </div>
+                            
+                                <ul>
+                                    <li>
+                                        <span><i class="bi bi-check-circle-fill"></i></span> <strong>Lorem ipsum</strong> dolor sit amet consectetur
+                                    </li>
+                                    <li>
+                                        <span><i class="bi bi-check-circle-fill"></i></span> <strong>Lorem ipsum dolor sit</strong> amet consectetur
+                                    </li>
+                                    <li>
+                                       <span><i class="bi bi-check-circle-fill"></i></span> <strong>Lorem ipsum dolor</strong> darkfly
+                                    </li>
+                                    <li>
+                                        <span><i class="bi bi-check-circle-fill"></i></span><strong> Lorem ipsum dolor sit amet</strong> emet <br> &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; rie buu consectetur
+                                    </li>
+                                    <li>
+                                        <span><i class="bi bi-check-circle-fill"></i></span> <strong>Lorem ipsum</strong> sit amet Lorem,<br> &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; ipsum dolor
+                                    </li>
+                                </ul>
+                                <button>Buy now</button>
+                            </div>
+                             
+                        </div>
+                    </section>
+        
+                    <section>
+                        <div class="gira">
+    
+                            <div class="bussines-pro">
+                                <button id="btn-static">More solded</button>
+                                <div class="desc">
+                                    <h3>Bussines Pro</h3>
+                                    <p> Only <span> $250 </span> permanent</p>
+                                </div>
+                            
+                                <ul>
+                                    <li>
+                                        <span><i class="bi bi-check-circle-fill"></i></span> <strong>Lorem ipsum</strong> dolor sit amet consectetur
+                                    </li>
+                                    <li>
+                                        <span><i class="bi bi-check-circle-fill"></i></span> <strong>Lorem ipsum dolor sit</strong> amet consectetur
+                                    </li>
+                                    <li>
+                                       <span><i class="bi bi-check-circle-fill"></i></span> <strong>Lorem ipsum dolor</strong> darkfly
+                                    </li>
+                                    <li>
+                                        <span><i class="bi bi-check-circle-fill"></i></span><strong> Lorem ipsum dolor sit amet</strong> emet <br> &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; rie buu consectetur
+                                    </li>
+                                </ul>
+                                <button id="btn-bottom">Buy now</button>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+    
+                <div>
+
+                    <section>
+                        <div class="gira">
+                            <div class="bussines-plus">
+                                <div class="desc">
+                                    <h3>Bussines Plus</h3>
+                                    <p> Only <span> $500 </span> permanent</p>
+                                </div>
+                    
+                                <ul>
+                                    <li>
+                                        <span><i class="bi bi-check-circle-fill"></i></span> <strong>Lorem ipsum</strong> dolor sit amet consectetur
+                                    </li>
+                                    <li>
+                                        <span><i class="bi bi-check-circle-fill"></i></span> <strong>Lorem ipsum dolor sit</strong> amet consectetur
+                                    </li>
+                                    <li>
+                                       <span><i class="bi bi-check-circle-fill"></i></span> <strong>Lorem ipsum dolor</strong> darkfly
+                                    </li>
+                                    <li>
+                                        <span><i class="bi bi-check-circle-fill"></i></span><strong> Lorem ipsum dolor sit amet</strong> emet <br> &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; rie buu consectetur
+                                    </li>
+                                    <li>
+                                        <span><i class="bi bi-check-circle-fill"></i></span> <strong>Lorem ipsum</strong> sit amet Lorem,<br> &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; ipsum dolor
+                                    </li>
+                                </ul>
+                                <button>Buy now</button>
+                            </div>
+                        </div>
+                    </section>
+                    
+                </div>
+    
+            </div>
+    
+        </section>
+    
+        <section class="sec-scroll faqs" id="five">
+    
+            <h1>Things tou probably wonder</h1>
+    
+            <div class="faq-container">
+    
+                <div class="faq">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Lorem ipsum dolor sit amet?</span>
+                        <p class="icon"><i class="bi bi-chevron-up"></i></p>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus corrupti dolores velit maiores quidem. Quibusdam.</p>
+                    </div>
+                </div>
+    
+                <div class="faq">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Lorem ipsum dolor sit amet?</span>
+                        <p class="icon"><i class="bi bi-chevron-up"></i></p>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam eos delectus quas. Voluptas blanditiis odio rem reprehenderit possimus!</p>
+                    </div>
+                </div>
+    
+                <div class="faq">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Lorem ipsum dolor sit amet?</span>
+                        <p class="icon"><i class="bi bi-chevron-up"></i></p>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam eos delectus quas. Voluptas blanditiis odio rem reprehenderit possimus!</p>
+                    </div>
+                </div>
+    
+                <div class="faq">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Lorem ipsum dolor sit amet?</span>
+                        <p class="icon"><i class="bi bi-chevron-up"></i></p>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam eos delectus quas. Voluptas blanditiis odio rem reprehenderit possimus!</p>
+                    </div>
+                </div>
+    
+                <div class="faq">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Lorem ipsum dolor sit amet?</span>
+                        <p class="icon"><i class="bi bi-chevron-up"></i></p>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam eos delectus quas. Voluptas blanditiis odio rem reprehenderit possimus!</p>
+                    </div>
+                </div>
+    
+            </div>
+    
+        </section>
+    
+        <div class="ultimate">
+             
+            <div>
+                <h1>You've get this far.</h1>
+                <h1>Ready to get started you important meeting?</h1>
+            </div>
+    
+            <div>
+                <button onclick="scrollToSection('six')">Planeed Please</button>
+                <button onclick="gotoDonw()">Start My Meeting</button>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+
+        <div class="pe-top">
+
+            <div class="logo-brand">
+                <img src="img/favicon.png" alt="">
+    
+                <p>Roomify</p>
+            </div>
+
+            <ul>
+                <li> <a href="index.html">Home</a> </li>
+                <li> <a href="index.html">Festival</a> </li>
+                <li> <a href="index.html">Download</a> </li>
+                <li> <a href="index.html">Plus & Pridge</a></li>
+            </ul>
+
+        </div>
+
+        <div class="follow">
+           
+            <div class="text">
+                <p>&copy; Roomify 2024</p>
+                <p>Design Dribbble - Developer by Herculano Quimuanga</p>
+            </div>
+
+            <div class="sociais">
+                <p>Follow</p>
+
+                <ul>
+                    <li> <a href="#"> <img src="img/fb-logo.png" alt=""></a> </li>
+                    <li> <a href="#"> <img src="img/insta-logoo.png" alt=""></a> </li>
+                    <li> <a href="#"> <img id="img-len" src="img/x-logo.png" alt=""></a> </li>
+                </ul>
+            </div>
+        </div>
+    </footer> 
+
+    <div class="modal-login">
+
+        <div class="modal-body">
+
+
+            <button class="close-modal">x</button>
+
+            <h1>Login Please</h1>
+
+            <form id="loginForm" action="#" method="post">
+
+                <div class="control">
+                    <input type="email" class="log_input" placeholder="Your email..." required oninput="validateEmail()">
+                    <span class="log_error">Invalid email</span>
+                </div>
+        
+                <div class="control">
+                    <input type="password" class="log_input" placeholder="Your password" required oninput="validatePass()">
+                    <span class="log_error">Invalid Password. Require 8 characters</span>
+                </div>
+        
+                <button type="submit" id="loginButton">Login</button>
+        
+                <div class="other">
+                    <p id="newAccount">Create a new account</p>
+                    <span>Or</span>
+                    <p class="forgot">Forgot password?</p>
+                </div>
+        
+                <div class="terms">
+                    <input type="checkbox" id="checkbox" required>
+                    <label for="checkbox">I accept and confirm with all Terms and Privacy Politic</label>
+                </div>
+        
+            </form>
+
+        </div>
+
+    </div>
+
+    <div class="modal-sign">
+
+        <div class="body-sign">
+
+            <button class="close-modal-sign">x</button>
+
+            <h1>Create a new account</h1>
+
+            <form action="">
+
+                <div class="name">
+
+                    <div class="input-control">
+                        <input type="text" placeholder="First name" required class="sing_error" oninput="namevalidate()">
+                        <span class="error">Minim of 3 character...</span>
+                    </div>
+
+                    <div class="input-control">
+                        <input type="text" placeholder="Nick name" required class="sing_error" oninput="nameBeforevalidate()">
+                        <span class="error">Minim of 4 character...</span>
+                    </div>
+                </div>
+
+                <div class="input-control">
+                    <input type="email"  placeholder="Your email" required class="sing_error" oninput="emailValidate()">
+                    <span class="error">Invalid email...</span>
+                </div>
+
+               <div class="input-control">
+                    <input type="password" placeholder="Password" required class="sing_error" oninput="passvalidate()">
+                    <span class="error">Minim 8 character...</span>
+               </div>
+
+                <div class="input-control">
+                    <input type="password" placeholder="Confirm Password" required class="sing_error" oninput="comparepass()">
+                    <span class="error">The password not responding...</span>
+                </div>
+
+                <button type="submit">Sign in</button>
+
+                <span id="haveAccount">You have a account?</span>
+
+                <div class="terms">
+                    <input type="checkbox" name="" id="checkbox2" required>
+                    <label for="checkbox2">I accept and confirm with all Terms and Privacy Politic</label>
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
